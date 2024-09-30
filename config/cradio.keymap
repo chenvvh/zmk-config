@@ -68,19 +68,19 @@
 
         mod {
             bindings = <
-&kt LCTRL  &kt LSHFT  &kt LALT  &kt LGUI  &trans    &kp N6     &kp N7     &kp N8    &kp N9    &kp N0
-&sk LCTRL  &sk LSHFT  &sk LALT  &sk LGUI  &trans    &kp N1     &kp N2     &kp N3    &kp N4    &kp N5
-&trans     &trans     &trans    &trans    &trans    &kp GRAVE  &kp APOS   &kp LBKT  &kp RBKT  &kp BSLH
-                                &trans    &trans    &kp MINUS  &kp EQUAL
+&kt LSHFT        &kt LCTRL    &kt LALT  &kt LGUI    &kp AMPERSAND    &kp GRAVE         &kp TILDE              &kp EQUAL          &kp PIPE         &kp BACKSLASH
+&sk LSHFT        &sk LCTRL    &sk LALT  &sk LGUI    &kp CARET        &kp LESS_THAN     &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp SINGLE_QUOTE
+&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT      &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp DOUBLE_QUOTES
+                                        &trans      &trans           &kp MINUS         &kp UNDERSCORE
             >;
         };
 
         nav {
             bindings = <
-&kp LG(LEFT)  &kp BSPC  &kp UP     &kp DEL    &kp LG(RIGHT)    &trans  &trans  &trans  &trans  &trans
-&kp LA(LEFT)  &kp LEFT  &kp DOWN   &kp RIGHT  &kp LA(RIGHT)    &trans  &trans  &trans  &trans  &trans
-&kp ESC       &kp TAB   &kp SPACE  &kt LSHFT  &kp RET          &trans  &trans  &trans  &trans  &trans
-                                   &trans     &trans           &trans  &trans
+&kp LG(LEFT)  &kp BSPC  &kp UP     &kp DEL    &kp LG(RIGHT)    &kp N5     &kp N6     &kp N7     &kp N8    &kp N9
+&kp LA(LEFT)  &kp LEFT  &kp DOWN   &kp RIGHT  &kp LA(RIGHT)    &kp N0     &kp N1     &kp N2     &kp N3    &kp N4
+&kp ESC       &kp TAB   &kp SPACE  &kt LSHFT  &kp RET          &kp DOT    &kp PLUS   &kp MINUS  &kp STAR  &kp FSLH
+                                   &trans     &trans           &kp ENTER  &kp EQUAL
             >;
         };
 
@@ -88,7 +88,7 @@
             bindings = <
 &bt BT_SEL 0          &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans
 &kp C_BRIGHTNESS_INC  &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &bt BT_CLR      &trans  &trans  &trans  &trans  &trans
-&kp C_BRIGHTNESS_DEC  &kp C_PLAY_PAUSE  &kp C_PREV         &kp C_NEXT       &trans          &trans  &trans  &trans  &trans  &trans
+&kp C_BRIGHTNESS_DEC  &kp C_PLAY_PAUSE  &kp C_PREV         &kp C_NEXT       &kp C_POWER     &trans  &trans  &trans  &trans  &trans
                                                            &trans           &trans          &trans  &trans
             >;
         };
