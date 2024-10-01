@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 #define MAC 0
 #define WIN 1
@@ -70,10 +69,10 @@
 
         navnum {
             bindings = <
-&kp LG(LEFT)  &kp BSPC  &kp UP     &kp DEL    &kp LG(RIGHT)    &kp N5     &kp N6     &kp N7     &kp N8    &kp N9
-&kp LA(LEFT)  &kp LEFT  &kp DOWN   &kp RIGHT  &kp LA(RIGHT)    &kp N0     &kp N1     &kp N2     &kp N3    &kp N4
-&kp ESC       &kp TAB   &kp SPACE  &kt LSHFT  &kp RET          &kp DOT    &kp PLUS   &kp MINUS  &kp STAR  &kp FSLH
-                                   &trans     &trans           &kp ENTER  &kp EQUAL
+&kp LG(LEFT)  &kp BSPC   &kp UP    &kp DEL     &kp LG(RIGHT)    &kp N5          &kp N6     &kp N7     &kp N8    &kp N9
+&kp LA(LEFT)  &kp LEFT   &kp DOWN  &kp RIGHT   &kp LA(RIGHT)    &kp N0          &kp N1     &kp N2     &kp N3    &kp N4
+&sk LSHFT     &sk LCTRL  &sk LALT  &sk LGUI    &kp RET          &kp DOT         &kp PLUS   &kp MINUS  &kp STAR  &kp FSLH
+                                   &kp ESCAPE  &trans           &kp LEFT_SHIFT  &kp EQUAL
             >;
         };
 
