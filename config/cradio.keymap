@@ -23,9 +23,15 @@
 #define U_WH_L &msc SCRL_LEFT
 #define U_WH_R &msc SCRL_RIGHT
 
-&sk { quick-release; };
+&sk {
+    quick-release;
+    lazy;
+    release-after-ms = <1500>;
 
-&lt { flavor = "balanced"; };
+    /delete-property/ ignore-modifiers;
+};
+
+&lt { flavor = "hold-preferred"; };
 
 / {
     chosen { zmk,charmap = &charmap_us; };
