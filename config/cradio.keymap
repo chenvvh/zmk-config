@@ -64,6 +64,26 @@
             flavor = "balanced";
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>;
         };
+
+        hrm: hrm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+        };
+
+        sh: sh {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SH";
+            bindings = <&kp>, <&sk>;
+
+            #binding-cells = <2>;
+            hold-while-undecided;
+            hold-while-undecided-linger;
+            tapping-term-ms = <180>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -73,10 +93,10 @@
 
         base {
             bindings = <
-&kp Q               &kp W                 &kp E             &kp R                 &kp T          &kp Y                 &kp U                  &kp I              &kp O                  &kp P
-&hrml LEFT_SHIFT A  &hrml LEFT_CONTROL S  &hrml LEFT_ALT D  &hrml LEFT_COMMAND F  &kp G          &kp H                 &hrmr RIGHT_COMMAND J  &hrmr RIGHT_ALT K  &hrmr RIGHT_CONTROL L  &hrmr RIGHT_SHIFT SEMICOLON
-&kp Z               &kp X                 &kp C             &kp V                 &kp B          &kp N                 &kp M                  &kp COMMA          &kp DOT                &kp SLASH
-                                                            &lt 1 TAB             &lt 2 SPACE    &mt LEFT_SHIFT ENTER  &lt 3 ESCAPE
+&kp Q              &kp W                &kp E            &kp R                &kp T          &kp Y                 &kp U                 &kp I             &kp O                 &kp P
+&hrm LEFT_SHIFT A  &hrm LEFT_CONTROL S  &hrm LEFT_ALT D  &hrm LEFT_COMMAND F  &kp G          &kp H                 &hrm RIGHT_COMMAND J  &hrm RIGHT_ALT K  &hrm RIGHT_CONTROL L  &hrm RIGHT_SHIFT SEMICOLON
+&kp Z              &kp X                &kp C            &kp V                &kp B          &kp N                 &kp M                 &kp COMMA         &kp DOT               &kp SLASH
+                                                         &lt 1 TAB            &lt 2 SPACE    &mt LEFT_SHIFT ENTER  &lt 3 ESCAPE
             >;
         };
 
@@ -91,10 +111,10 @@
 
         navnum {
             bindings = <
-&kp LG(LEFT)  &kp BSPC   &kp UP    &kp DEL     &kp LG(RIGHT)    &kp N5          &kp N6     &kp N7     &kp N8    &kp N9
-&kp LA(LEFT)  &kp LEFT   &kp DOWN  &kp RIGHT   &kp LA(RIGHT)    &kp N0          &kp N1     &kp N2     &kp N3    &kp N4
-&sk LSHFT     &sk LCTRL  &sk LALT  &sk LGUI    &kp RET          &kp DOT         &kp PLUS   &kp MINUS  &kp STAR  &kp FSLH
-                                   &kp ESCAPE  &trans           &kp LEFT_SHIFT  &kp EQUAL
+&kp LG(LEFT)          &kp BSPC         &kp UP         &kp DEL        &kp LG(RIGHT)    &kp N5          &kp N6     &kp N7     &kp N8    &kp N9
+&kp LA(LEFT)          &kp LEFT         &kp DOWN       &kp RIGHT      &kp LA(RIGHT)    &kp N0          &kp N1     &kp N2     &kp N3    &kp N4
+&sh LSHFT LEFT_SHIFT  &sh LCTRL LCTRL  &sh LALT LALT  &sh LGUI LGUI  &kp RET          &kp DOT         &kp PLUS   &kp MINUS  &kp STAR  &kp FSLH
+                                                      &kp ESCAPE     &trans           &kp LEFT_SHIFT  &kp EQUAL
             >;
         };
 
