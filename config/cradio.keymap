@@ -81,10 +81,10 @@
 
         punc {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp DOLLAR        &kp PERCENT      &kp GRAVE             &kp TILDE          &kp PIPE         &kp BACKSLASH     &kp DOUBLE_QUOTES
-&kp LEFT_BRACE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE   &kp CARET        &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE        &kp SINGLE_QUOTE
-&kp LESS_THAN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp AMPERSAND    &kp C_BRIGHTNESS_DEC  &kp C_PREVIOUS     &kp C_NEXT       &kp C_PLAY_PAUSE  &kp DOUBLE_QUOTES
-                                                              &kp UNDERSCORE    &kp MINUS        &trans                &trans
+&kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp DOLLAR        &kp PERCENT       &kp GRAVE             &kp TILDE          &kp PIPE         &kp BACKSLASH     &kp DOUBLE_QUOTES
+&kp LEFT_BRACE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE   &kp CARET         &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE        &kp SINGLE_QUOTE
+&kp LESS_THAN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp AMPERSAND     &kp C_BRIGHTNESS_DEC  &kp C_PREVIOUS     &kp C_NEXT       &kp C_PLAY_PAUSE  &kp DOUBLE_QUOTES
+                                                              &trans            &kp UNDERSCORE    &trans                &trans
             >;
         };
 
