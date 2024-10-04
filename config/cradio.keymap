@@ -94,7 +94,7 @@
         compatible = "zmk,conditional-layers";
 
         bl {
-            if-layers = <3 5>;
+            if-layers = <3 4>;
             then-layer = <5>;
         };
     };
