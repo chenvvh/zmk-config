@@ -78,6 +78,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
+            flavor = "balanced";
         };
 
         sh: sh {
