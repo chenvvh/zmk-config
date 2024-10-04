@@ -116,10 +116,10 @@
 
         modpunc {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT      &kp GRAVE       &kp TILDE             &kp EQUAL              &kp PIPE          &kp BACKSLASH
-&sk LSHFT        &sk LCTRL    &sk LALT  &sk LGUI    &kp CARET        &kp LESS_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp SINGLE_QUOTE
-&kp LSHFT        &kp LCTRL    &kp LALT  &kp LGUI    &kp AMPERSAND    &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE   &kp DOUBLE_QUOTES
-                                        &trans      &trans           &kp MINUS       &kp UNDERSCORE
+&kp EXCLAMATION   &kp AT_SIGN      &kp HASH       &kp DOLLAR     &kp PERCENT      &kp GRAVE       &kp TILDE             &kp EQUAL              &kp PIPE          &kp BACKSLASH
+&sh LSHFT LSHIFT  &sh LCTRL LCTRL  &sh LALT LALT  &sh LGUI LGUI  &kp CARET        &kp LESS_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp SINGLE_QUOTE
+&kp LSHFT         &kp LCTRL        &kp LALT       &kp LGUI       &kp AMPERSAND    &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE   &kp DOUBLE_QUOTES
+                                                  &trans         &trans           &kp MINUS       &kp UNDERSCORE
             >;
         };
 
