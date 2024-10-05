@@ -23,7 +23,10 @@
 #define U_WH_L &msc SCRL_LEFT
 #define U_WH_R &msc SCRL_RIGHT
 
-&sk { release-after-ms = <1500>; };
+&sk {
+    release-after-ms = <1500>;
+    quick-release;
+};
 
 &lt { flavor = "hold-preferred"; };
 
@@ -50,9 +53,19 @@
 
             #binding-cells = <2>;
             hold-while-undecided;
-            tapping-term-ms = <90>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
             hold-while-undecided-linger;
+        };
+
+        shifttap: shifttap {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFTTAP";
+            bindings = <&kp LA(LEFT)>, <&kp LS(TAB)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LGUI)>;
         };
     };
 
@@ -89,7 +102,7 @@
         nav {
             bindings = <
 &kp ESCAPE            &kp BSPC         &kp UP         &kp DEL        &kp GLOBE        &kp N5          &kp N6     &kp N7     &kp N8    &kp N9
-&kp LA(LEFT)          &kp LEFT         &kp DOWN       &kp RIGHT      &kp LA(RIGHT)    &kp N0          &kp N1     &kp N2     &kp N3    &kp N4
+&shifttap             &kp LEFT         &kp DOWN       &kp RIGHT      &kp LA(RIGHT)    &kp N0          &kp N1     &kp N2     &kp N3    &kp N4
 &sh LSHFT LEFT_SHIFT  &sh LCTRL LCTRL  &sh LALT LALT  &sh LGUI LGUI  &kp RET          &kp DOT         &kp PLUS   &kp MINUS  &kp STAR  &kp FSLH
                                                       &trans         &trans           &kp LEFT_SHIFT  &kp EQUAL
             >;
