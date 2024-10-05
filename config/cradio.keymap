@@ -182,10 +182,10 @@
 
         testbase {
             bindings = <
-&sh3 LSHFT LEFT_SHIFT  &sh3 LCTRL LCTRL  &sh3 LALT LALT  &sh3 LGUI LGUI  &kp T        &kp Y                 &kp U         &kp I      &kp O    &kp P
-&sh2 LSHFT LEFT_SHIFT  &sh2 LCTRL LCTRL  &sh2 LALT LALT  &sh2 LGUI LGUI  &kp G        &kp H                 &kp J         &kp K      &kp L    &kp SEMI
-&sh LSHFT LEFT_SHIFT   &sh LCTRL LCTRL   &sh LALT LALT   &none           &none        &kp N                 &kp M         &kp COMMA  &kp DOT  &kp SLASH
-                                                         &lt 5 TAB       &kp SPACE    &mt LEFT_SHIFT ENTER  &lt 1 ESCAPE
+&sh3 LSHFT LEFT_SHIFT  &sh3 LCTRL LCTRL  &sh6 LALT LALT  &sh6 LGUI LGUI          &kp T        &kp Y                 &kp U         &kp I      &kp O    &kp P
+&sh2 LSHFT LEFT_SHIFT  &sh2 LCTRL LCTRL  &sh5 LALT LALT  &sh5 LGUI LGUI          &kp G        &kp H                 &kp J         &kp K      &kp L    &kp SEMI
+&sh LSHFT LEFT_SHIFT   &sh LCTRL LCTRL   &sh4 LALT LALT  &sh4 LEFT_GUI LEFT_GUI  &none        &kp N                 &kp M         &kp COMMA  &kp DOT  &kp SLASH
+                                                         &lt 5 TAB               &kp SPACE    &mt LEFT_SHIFT ENTER  &lt 1 ESCAPE
             >;
         };
 
