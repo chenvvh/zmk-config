@@ -24,7 +24,7 @@
 #define U_WH_R &msc SCRL_RIGHT
 
 &sk {
-    release-after-ms = <1500>;
+    release-after-ms = <1200>;
     quick-release;
 };
 
@@ -53,7 +53,7 @@
 
             #binding-cells = <2>;
             hold-while-undecided;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <180>;
             flavor = "tap-preferred";
             hold-while-undecided-linger;
         };
