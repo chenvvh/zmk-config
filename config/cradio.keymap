@@ -58,6 +58,8 @@
             hold-while-undecided-linger;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 24 25 26 27 28 29 30 31 32 33>;
+            hold-trigger-on-release;
         };
 
         sh2: sh2 {
@@ -69,6 +71,8 @@
             hold-while-undecided;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
+            hold-while-undecided-linger;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 24 25 26 27 28 29 30 31 32 33>;
         };
 
         sh3: sh3 {
@@ -79,6 +83,19 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
+            hold-trigger-key-positions = <20 21 22 23>;
+        };
+
+        tt: tt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TT";
+            bindings = <&kp>, <&sk>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <20 21 22 23>;
+            hold-trigger-on-release;
         };
     };
 
@@ -137,10 +154,10 @@
 
         testbase {
             bindings = <
-&sh3 LSHFT LEFT_SHIFT  &sh LCTRL LCTRL   &sh3 LALT LALT  &sh3 LGUI LGUI  &kp T        &kp Y                 &kp U         &kp I      &kp O    &kp P
-&sh2 LSHFT LEFT_SHIFT  &sh2 LCTRL LCTRL  &sh2 LALT LALT  &sh2 LGUI LGUI  &kp G        &kp H                 &kp J         &kp K      &kp L    &kp SEMI
-&sh LSHFT LEFT_SHIFT   &sh LCTRL LCTRL   &sh LALT LALT   &sh LGUI LGUI   &kp B        &kp N                 &kp M         &kp COMMA  &kp DOT  &kp SLASH
-                                                         &lt 5 TAB       &kp SPACE    &mt LEFT_SHIFT ENTER  &lt 1 ESCAPE
+&sh3 LSHFT LEFT_SHIFT  &sh3 LCTRL LCTRL  &sh3 LALT LALT  &sh3 LGUI LGUI  &kp T            &kp Y                 &kp U         &kp I      &kp O    &kp P
+&sh2 LSHFT LEFT_SHIFT  &sh2 LCTRL LCTRL  &sh2 LALT LALT  &sh2 LGUI LGUI  &kp G            &kp H                 &kp J         &kp K      &kp L    &kp SEMI
+&sh LSHFT LEFT_SHIFT   &sh LCTRL LCTRL   &sh LALT LALT   &tt LGUI LGUI   &tt LALT LALT    &kp N                 &kp M         &kp COMMA  &kp DOT  &kp SLASH
+                                                         &lt 5 TAB       &kp SPACE        &mt LEFT_SHIFT ENTER  &lt 1 ESCAPE
             >;
         };
 
