@@ -23,10 +23,7 @@
 #define U_WH_L &msc SCRL_LEFT
 #define U_WH_R &msc SCRL_RIGHT
 
-&sk {
-    quick-release;
-    release-after-ms = <1500>;
-};
+&sk { release-after-ms = <1500>; };
 
 &lt { flavor = "hold-preferred"; };
 
