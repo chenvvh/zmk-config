@@ -55,7 +55,7 @@
             hold-while-undecided;
             hold-while-undecided-linger;
             tapping-term-ms = <200>;
-            hold-trigger-on-release;
+            flavor = "tap-preferred";
         };
     };
 
