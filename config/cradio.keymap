@@ -26,6 +26,8 @@
 &sk {
     quick-release;
     release-after-ms = <1500>;
+
+    /delete-property/ ignore-modifiers;
 };
 
 &lt { flavor = "hold-preferred"; };
