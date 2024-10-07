@@ -24,7 +24,7 @@
 #define U_WH_R &msc SCRL_RIGHT
 
 &sk {
-    release-after-ms = <1200>;
+    release-after-ms = <1500>;
     quick-release;
 };
 
@@ -54,8 +54,8 @@
             #binding-cells = <2>;
             hold-while-undecided;
             tapping-term-ms = <180>;
-            flavor = "hold-preferred";
-            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 24 25 26 27 28 29 30 31 32 33>;
+            flavor = "tap-preferred";
+            hold-while-undecided-linger;
         };
 
         ShiftTab: ShiftTab {
