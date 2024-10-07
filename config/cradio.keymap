@@ -121,77 +121,77 @@
 
         ga {
             bindings = <&kp LA(LEFT_GUI)>;
-            key-positions = <13 12 31>;
+            key-positions = <13 12>;
             slow-release;
             layers = <1>;
         };
 
         gc {
             bindings = <&kp LC(LEFT_GUI)>;
-            key-positions = <13 11 31>;
+            key-positions = <13 11>;
             slow-release;
             layers = <1>;
         };
 
         gs {
             bindings = <&kp LS(LEFT_GUI)>;
-            key-positions = <13 10 31>;
+            key-positions = <13 10>;
             slow-release;
             layers = <1>;
         };
 
         ac {
             bindings = <&kp LC(LEFT_ALT)>;
-            key-positions = <12 11 31>;
+            key-positions = <12 11>;
             slow-release;
             layers = <1>;
         };
 
         as {
             bindings = <&kp LS(LEFT_ALT)>;
-            key-positions = <12 10 31>;
+            key-positions = <12 10>;
             slow-release;
             layers = <1>;
         };
 
         cs {
             bindings = <&kp LS(LEFT_CONTROL)>;
-            key-positions = <11 10 31>;
+            key-positions = <11 10>;
             slow-release;
             layers = <1>;
         };
 
         gac {
             bindings = <&kp LC(LA(LEFT_GUI))>;
-            key-positions = <13 12 11 31>;
+            key-positions = <13 12 11>;
             slow-release;
             layers = <1>;
         };
 
         gas {
             bindings = <&kp LA(LS(LEFT_GUI))>;
-            key-positions = <13 12 10 31>;
+            key-positions = <13 12 10>;
             slow-release;
             layers = <1>;
         };
 
         gcs {
             bindings = <&kp LS(LC(LEFT_GUI))>;
-            key-positions = <13 10 11 31>;
+            key-positions = <13 10 11>;
             slow-release;
             layers = <1>;
         };
 
         acs {
             bindings = <&kp LS(LC(LEFT_ALT))>;
-            key-positions = <12 10 11 31>;
+            key-positions = <12 10 11>;
             slow-release;
             layers = <1>;
         };
 
         gacs {
             bindings = <&kp LS(LC(LA(LEFT_GUI)))>;
-            key-positions = <13 10 11 12 31>;
+            key-positions = <13 10 11 12>;
             slow-release;
             layers = <1>;
         };
